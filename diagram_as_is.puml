@@ -5,7 +5,9 @@
 
 Person(user, "User", "A user of the system")
 System(WarmHouse, "WarmHouse System", "System managing heating and temperature")
+System_Ext(api, "Devices", "Heating and temperature devices")
 
 Rel(user, WarmHouse, "Get temperature, turn on/off heating")
+Rel(WarmHouse, api, "Modify devices")
 
 @enduml
