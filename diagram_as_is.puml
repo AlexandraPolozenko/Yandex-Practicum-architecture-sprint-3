@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/context-diagram
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(user, "User", "A user of the system")
+System(WarmHouse, "WarmHouse System", "System managing heating and temperature")
+
+Rel(user, WarmHouse, "Get temperature, turn on/off heating")
+
+@enduml
