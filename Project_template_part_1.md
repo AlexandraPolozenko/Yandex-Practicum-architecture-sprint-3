@@ -44,16 +44,8 @@
 
 Добавьте сюда диаграмму контекста в модели C4.
 
-Чтобы добавить ссылку в файл Readme.md, нужно использовать синтаксис Markdown. Это делают так:
-
 ```markdown
-[Текст ссылки](URL)
-```
-
-Замените `Текст ссылки` текстом, который хотите использовать для ссылки. Вместо `URL` вставьте адрес, на который должна вести ссылка. Например:
-
-```markdown
-[Посетите Яндекс](https://ya.ru/)
+[Текущая диаграма контента](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/diagram_as_is.png)
 ```
 
 # Задание 2. Проектирование микросервисной архитектуры
@@ -62,16 +54,24 @@
 
 **Диаграмма контейнеров (Containers)**
 
-Добавьте диаграмму.
+[Диаграма контейнеров](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/containers.png)
 
 **Диаграмма компонентов (Components)**
 
-Добавьте диаграмму для каждого из выделенных микросервисов.
+[Диаграма компонентов микросервиса девайсов](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/components/devices.png)
+
+[Диаграма компонентов микросервиса профиля](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/components/profile.png)
+
+[Диаграма компонентов микросервиса девайса отопления](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/components/heating.png)
+
+Для микросервисов lights, gates, camera диаграма будет аналогична отоплению
 
 **Диаграмма кода (Code)**
 
-Добавьте одну диаграмму или несколько.
+[Диаграма кода для слоя бизнес логики работы с профилем](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/code/serviceLayerProfile.png)
+
+[Диаграма кода для слоя бизнес логики работы с девайсами](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/code/servieLayerDevices.png)
 
 # Задание 3. Разработка ER-диаграммы
 
-Добавьте сюда ER-диаграмму. Она должна отражать ключевые сущности системы, их атрибуты и тип связей между ними.
+[ER-диаграма](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/er.png)
