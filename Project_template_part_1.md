@@ -44,9 +44,7 @@
 
 Добавьте сюда диаграмму контекста в модели C4.
 
-```markdown
 [Текущая диаграма контента](https://github.com/AlexandraPolozenko/Yandex-Practicum-architecture-sprint-3/blob/project_part_1/diagrams/diagram_as_is.png)
-```
 
 # Задание 2. Проектирование микросервисной архитектуры
 
