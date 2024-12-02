@@ -1,0 +1,73 @@
+@startuml
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Component.puml
+
+Component(ServiceLayer, "ServiceLayer", "business logic") {
+    class ControllerRequest {
+       +Long deviceId
+       +String setting1
+       +String setting2
+    }
+
+    class Home {
+       +Long id
+       +String metadata
+       +create()
+       +update()
+       +addDevice()
+    }
+
+    class Profile {
+       +Long id
+       +String metadata
+       +create()
+       +update()
+       +addHome()
+    }
+
+    class Device {
+       +Long id
+       +String metadata
+       +Enum status
+       +activate()
+       +update()
+    }
+
+    Home <-- ControllerRequest : receives
+    Profile <-- ControllerRequest : receives
+    Device <-- ControllerRequest : receives
+}
+
+class AbstractResponse {
+  +Enum status
+}
+Home --> AbstractResponse : sends
+Profile --> AbstractResponse : sends
+Device --> AbstractResponse : sends
+
+Component(Repository, "Repository") {
+}
+Component(DeviceService, "DeviceService") {
+}
+Component(HomeController, "HomeController") {
+}
+Component(ProfileController, "ProfileController") {
+}
+Component(DeviceController, "DeviceController") {
+}
+
+Device --> DeviceService : interact
+
+Profile --> Repository : save
+Home --> Repository : save
+
+HomeController --> ControllerRequest : generates
+HomeController <-- AbstractResponse : receives
+ProfileController --> ControllerRequest : generates
+ProfileController <-- AbstractResponse : receives
+DeviceController --> ControllerRequest : generates
+DeviceController <-- AbstractResponse : receives
+
+@enduml
