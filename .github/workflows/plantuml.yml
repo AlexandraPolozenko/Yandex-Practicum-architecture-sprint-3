@@ -3,7 +3,7 @@ name: PlantUML Diagrams
 on:
   push:
     branches:
-      - main
+      - project_part_1
   pull_request:
     branches:
       - main
